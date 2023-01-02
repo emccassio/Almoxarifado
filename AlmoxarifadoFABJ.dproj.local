@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/12/15 00:12:44.000.817,=C:\Users\Emerson\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/12/18 20:45:05.000.588,=C:\Users\Emerson\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/12/18 20:49:47.000.555,C:\Programação\Almoxarifado\src\views\View.principal.dfm=C:\Users\Emerson\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/12/18 20:49:47.000.555,C:\Programação\Almoxarifado\src\views\View.principal.pas=C:\Users\Emerson\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/12/18 20:52:37.000.420,C:\Programação\Almoxarifado\AlmoxarifadoFABJ.dproj=C:\Users\Emerson\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/12/21 22:12:24.000.058,=C:\Programação\Almoxarifado\Unit1.pas</Transaction>
+    <Transaction>2022/12/21 22:13:49.000.767,C:\Programação\Almoxarifado\Unit1.dfm=C:\Programação\Almoxarifado\src\services\Service.conexao.dfm</Transaction>
+    <Transaction>2022/12/21 22:13:49.000.767,C:\Programação\Almoxarifado\Unit1.pas=C:\Programação\Almoxarifado\src\services\Service.conexao.pas</Transaction>
+    <Transaction>2022/12/22 00:25:02.000.535,=C:\Programacao\Almoxarifado\Unit1.pas</Transaction>
+    <Transaction>2022/12/22 00:25:46.000.564,C:\Programacao\Almoxarifado\src\services\Service.cadastro.pas=C:\Programacao\Almoxarifado\Unit1.pas</Transaction>
+    <Transaction>2022/12/22 00:25:46.000.564,C:\Programacao\Almoxarifado\src\services\Service.cadastro.dfm=C:\Programacao\Almoxarifado\Unit1.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

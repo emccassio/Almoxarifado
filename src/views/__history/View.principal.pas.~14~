@@ -1,0 +1,156 @@
+unit View.principal;
+
+interface
+
+uses
+  Winapi.Windows,
+  Winapi.Messages,
+  System.SysUtils,
+  System.Variants,
+  System.Classes,
+  Vcl.Graphics,
+  Vcl.Controls,
+  Vcl.Forms,
+  Vcl.Dialogs, Vcl.Buttons, Vcl.ExtCtrls, Vcl.StdCtrls;
+
+type
+  TViewPrincipal = class(TForm)
+    Panel1: TPanel;
+    Panel2: TPanel;
+    Panel3: TPanel;
+    Panel4: TPanel;
+    Panel5: TPanel;
+    pnlLogo: TPanel;
+    Panel6: TPanel;
+    Panel7: TPanel;
+    Label1: TLabel;
+    Label2: TLabel;
+    Image1: TImage;
+    pnlShapeMenu: TPanel;
+    shapeMenu: TShape;
+    pnlDadosdoMenu: TPanel;
+    btnProdutos: TSpeedButton;
+    btnPessoas: TSpeedButton;
+    btnDepartamentos: TSpeedButton;
+    SpeedButton1: TSpeedButton;
+    btnMovimentacao: TSpeedButton;
+    Image2: TImage;
+    procedure SpeedButton1Click(Sender: TObject);
+    procedure btnPessoasClick(Sender: TObject);
+    procedure btnProdutosClick(Sender: TObject);
+    procedure btnDepartamentosClick(Sender: TObject);
+    procedure btnMovimentacaoClick(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+    procedure btnPessoasMouseEnter(Sender: TObject);
+    procedure btnProdutosMouseEnter(Sender: TObject);
+    procedure btnDepartamentosMouseEnter(Sender: TObject);
+    procedure btnMovimentacaoMouseEnter(Sender: TObject);
+    procedure SpeedButton1MouseEnter(Sender: TObject);
+    procedure SpeedButton1MouseLeave(Sender: TObject);
+    procedure btnMovimentacaoMouseLeave(Sender: TObject);
+    procedure btnDepartamentosMouseLeave(Sender: TObject);
+    procedure btnProdutosMouseLeave(Sender: TObject);
+    procedure btnPessoasMouseLeave(Sender: TObject);
+  private
+    procedure GET_LineMENU(Sender: Tobject);
+  public
+    { Public declarations }
+  end;
+
+var
+  ViewPrincipal: TViewPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+procedure TViewPrincipal.btnDepartamentosClick(Sender: TObject);
+begin
+  GET_LineMENU(Sender);
+end;
+
+procedure TViewPrincipal.btnDepartamentosMouseEnter(Sender: TObject);
+begin
+  btnDepartamentos.Font.Color := $005ABA99;
+end;
+
+procedure TViewPrincipal.btnDepartamentosMouseLeave(Sender: TObject);
+begin
+  btnDepartamentos.Font.Color := clWhite;
+end;
+
+procedure TViewPrincipal.btnMovimentacaoClick(Sender: TObject);
+begin
+  GET_LineMENU(Sender);
+end;
+
+procedure TViewPrincipal.btnMovimentacaoMouseEnter(Sender: TObject);
+begin
+  btnMovimentacao.Font.Color := $005ABA99;
+end;
+
+procedure TViewPrincipal.btnMovimentacaoMouseLeave(Sender: TObject);
+begin
+  btnMovimentacao.Font.Color := clWhite;
+end;
+
+procedure TViewPrincipal.btnPessoasClick(Sender: TObject);
+begin
+  GET_LineMENU(Sender);
+end;
+
+procedure TViewPrincipal.btnPessoasMouseEnter(Sender: TObject);
+begin
+  btnPessoas.Font.Color := $005ABA99;
+end;
+
+procedure TViewPrincipal.btnPessoasMouseLeave(Sender: TObject);
+begin
+  btnPessoas.Font.Color := clWhite;
+end;
+
+procedure TViewPrincipal.btnProdutosClick(Sender: TObject);
+begin
+  GET_LineMENU(Sender);
+end;
+
+procedure TViewPrincipal.btnProdutosMouseEnter(Sender: TObject);
+begin
+  btnProdutos.Font.Color := $005ABA99;
+end;
+
+procedure TViewPrincipal.btnProdutosMouseLeave(Sender: TObject);
+begin
+  btnProdutos.Font.Color := clWhite;
+end;
+
+procedure TViewPrincipal.FormShow(Sender: TObject);
+begin
+  GET_LineMENU(btnPessoas);
+end;
+
+procedure TViewPrincipal.GET_LineMENU(Sender: Tobject);
+begin
+  shapeMenu.Left    := 3;
+  shapeMenu.Top     := 0;
+  shapeMenu.Height  := TSpeedButton(Sender).Height;
+  shapeMenu.Top     := TSpeedButton(Sender).Top;
+  pnlShapeMenu.Repaint;
+end;
+
+procedure TViewPrincipal.SpeedButton1Click(Sender: TObject);
+begin
+  Application.Terminate;
+end;
+
+procedure TViewPrincipal.SpeedButton1MouseEnter(Sender: TObject);
+begin
+  SpeedButton1.Font.Color := $005ABA99;
+end;
+
+procedure TViewPrincipal.SpeedButton1MouseLeave(Sender: TObject);
+begin
+  SpeedButton1.Font.Color := clWhite;
+end;
+
+end.
